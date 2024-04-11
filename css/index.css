@@ -833,7 +833,7 @@
   #services-286 .cs-item:hover .cs-picture:before {
     width: 100%;
     height: 100%;
-    opacity: 1;
+    opacity: 0;
   }
   #services-286 .cs-item:hover .cs-h3,
   #services-286 .cs-item:hover .cs-item-text {
