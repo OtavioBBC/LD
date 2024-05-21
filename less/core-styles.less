@@ -175,6 +175,49 @@
             }
         }
     }
+
+    .cs-nav-solid {
+        font-size: (16/16rem);
+        /* 46px - 56px */
+        line-height: 3.5rem;
+        width: 9rem;
+        height: 3.5rem;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        color: #FCFAFE;
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        border-radius: .625rem;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+        white-space: nowrap;
+
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 0%;
+            background: var(--headerColor);
+            opacity: 1;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: width .3s;
+            border-radius: .625rem;
+        }
+
+        &:hover {
+            &:before {
+                width: 100%;
+                border-radius: .625rem;
+            }
+        }
+    }
     
     // Hidden Screen reader skip nav button
     .skip {
@@ -252,6 +295,8 @@
             align-items: center;
             background-color: var(--secondary);
         }
+
+
 
         .cs-logo {
             width: 100%;
@@ -452,7 +497,24 @@
         }
 
         .cs-button-solid {
-            display: none;
+        font-size: (16/16rem);
+        /* 46px - 56px */
+
+        width: 8rem;
+        height: 3.5rem;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        color: #FCFAFE;
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        border-radius: .625rem;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+        white-space: nowrap;
         }
     }
 }
@@ -474,9 +536,6 @@
         position: static;
         z-index: 10000;
 
-        .cs-button-solid {
-            width: 17rem;
-        }
 
         .cs-container {
             width: 100%;
@@ -869,13 +928,13 @@
         }
 
         .cs-social-link {
-            width: 24/16rem;
             height: 24/16rem;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
+            margin-top: 2rem;
             z-index: 1;
             transition: transform .3s, background-color .3s;
 
@@ -928,4 +987,23 @@
     }
 }
                                 
-                                
+.float{
+	position:fixed;
+	width:90px;
+	height:90px;
+	bottom:40px;
+    left:40px;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+    z-index:100;
+    transition: ttransform 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+
+    :hover{
+    transform:translateY(-20px);
+    }
+}
+
+.my-float{
+	margin-top:16px;
+}                             
